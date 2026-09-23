@@ -1360,7 +1360,7 @@ body[data-theme="dark"] .note-card-red {
   body.has-pointer button,
   body.has-pointer [role="button"],
   body.has-pointer summary {
-    cursor: url("assets/cursor-hand-reference-black.png?v=solid-fill-01") 10 3, pointer;
+    cursor: url("assets/cursor-hand-reference-black.png?v=solid-fill-02") 10 3, pointer;
   }
 
   body.has-pointer input:not([type="button"]):not([type="submit"]):not([type="reset"]):not([type="checkbox"]):not([type="radio"]),
@@ -1379,7 +1379,7 @@ body[data-theme="dark"] .note-card-red {
   body[data-theme="dark"].has-pointer button,
   body[data-theme="dark"].has-pointer [role="button"],
   body[data-theme="dark"].has-pointer summary {
-    cursor: url("assets/cursor-hand-reference.png?v=solid-fill-01") 10 3, pointer;
+    cursor: url("assets/cursor-hand-reference.png?v=solid-fill-02") 10 3, pointer;
   }
 
   body[data-theme="dark"].has-pointer input:not([type="button"]):not([type="submit"]):not([type="reset"]):not([type="checkbox"]):not([type="radio"]),
