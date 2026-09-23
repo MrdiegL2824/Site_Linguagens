@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#efe7da" />
+    <meta
+      name="description"
+      content="Caderno visual sobre palavra, imagem, corpo e outras formas de linguagem."
+    />
+    <title>ATLAS 02 — Caderno de linguagem</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="vendor/lenis.css" />
+    <link rel="stylesheet" href="styles.css?v=cursor-theme-02" />
+    <link rel="stylesheet" href="caderno.css" />
+  </head>
+  <body data-theme="light">
+    <canvas class="particle-field" id="particle-field" aria-hidden="true"></canvas>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+
+    <div class="page-loader" aria-hidden="true">
+      <span class="loader-mark">ATLAS<span>//</span>02</span>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="index.html#inicio" aria-label="Voltar ao início">
+        <span class="brand-dot"></span>
+        <span>ATLAS <em>//</em> 02</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a class="nav-link" href="index.html#inicio">início</a>
+        <a class="nav-link" href="index.html#galeria">camadas</a>
+        <a class="nav-link" href="index.html#experiencia">estúdio</a>
+        <a class="nav-link is-active" href="caderno.html">caderno</a>
+      </nav>
+
+      <button class="theme-toggle magnetic" type="button" data-theme-toggle aria-label="Ativar modo escuro">
+        <span class="theme-toggle-icon">◐</span>
+        <span data-theme-label>modo escuro</span>
+      </button>
+
+      <a class="header-action magnetic" href="index.html#experiencia">
+        <span>voltar</span>
+        <span class="arrow">↗</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="notebook-hero section-shell">
+        <div class="notebook-hero-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line"></span> caderno / 02</p>
+          <h1>Tudo pode<br /><span>virar linguagem.</span></h1>
+          <p class="hero-description">
+            Uma página para reunir pistas, referências e pequenas descobertas.
+          </p>
+          <a class="text-link magnetic" href="#laboratorio">abrir o laboratório <span>↓</span></a>
+        </div>
+
+        <div class="notebook-cover layered-art reveal" data-depth-group="notebook" style="--delay: 120ms">
+          <img class="art-layer art-layer-bg" src="assets/card-palavra-bg.png" data-light-src="assets/card-palavra-bg.png" data-dark-src="assets/card-palavra-bg-dark.png" alt="" aria-hidden="true" />
+          <img class="art-layer art-layer-fg" src="assets/card-palavra-fg.png" alt="Colagem com formas, olhos, pássaro e linha vermelha" />
+          <span class="cover-index">02 <i>/</i> 04</span>
+          <span class="cover-note">anotar é<br />dar forma</span>
+          <span class="cover-stroke"></span>
+        </div>
+      </section>
+
+      <section class="notes-section section-shell">
+        <div class="notes-heading reveal">
+          <p class="eyebrow"><span class="eyebrow-line"></span> notas soltas</p>
+          <h2>Algumas coisas<br /><span>querem ser vistas.</span></h2>
+        </div>
+
+        <div class="note-grid">
+          <article class="note-card note-card-blue reveal">
+            <span class="note-mark">01</span>
+            <span class="note-symbol">A</span>
+            <div>
+              <p class="note-kicker">palavra</p>
+              <h3>Nomear<br />é escolher.</h3>
+            </div>
+            <span class="note-line"></span>
+          </article>
+
+          <article class="note-card note-card-image layered-art reveal" data-depth-group="note-image" style="--delay: 90ms">
+            <img class="art-layer art-layer-bg" src="assets/hero-gesto-bg.png" data-light-src="assets/hero-gesto-bg.png" data-dark-src="assets/hero-gesto-bg-dark.png" alt="" aria-hidden="true" loading="lazy" />
+            <img class="art-layer art-layer-fg" src="assets/hero-gesto-fg.png" alt="Colagem de tinta vermelha sobre papel e desenho de rosto" loading="lazy" />
+            <div class="note-card-overlay"></div>
+            <div class="note-card-label">
+              <span class="note-kicker">imagem</span>
+              <h3>Sugerir<br />é abrir espaço.</h3>
+            </div>
+          </article>
+
+          <article class="note-card note-card-red reveal" style="--delay: 180ms">
+            <span class="note-mark">03</span>
+            <span class="note-symbol">↗</span>
+            <div>
+              <p class="note-kicker">gesto</p>
+              <h3>Mover<br />é dizer.</h3>
+            </div>
+            <span class="note-line"></span>
+          </article>
+        </div>
+      </section>
+
+      <section class="laboratory section-shell" id="laboratorio">
+        <div class="laboratory-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line"></span> laboratório</p>
+          <h2>Monte uma<br /><span>pequena frase.</span></h2>
+          <p class="section-note">Escolha palavras. Veja o sentido aparecer.</p>
+        </div>
+
+        <div class="word-lab reveal" style="--delay: 100ms">
+          <div class="word-lab-topline">
+            <span>ensaio aberto</span>
+            <span>toque nos fragmentos</span>
+          </div>
+          <div class="phrase-stage">
+            <span class="phrase-prefix">a linguagem</span>
+            <strong data-phrase>começa aqui.</strong>
+          </div>
+          <div class="word-bank" aria-label="Palavras disponíveis">
+            <button class="word-chip" type="button" data-word="respira">respira</button>
+            <button class="word-chip" type="button" data-word="desenha">desenha</button>
+            <button class="word-chip" type="button" data-word="escuta">escuta</button>
+            <button class="word-chip" type="button" data-word="inventa">inventa</button>
+            <button class="word-chip" type="button" data-word="silêncio">silêncio</button>
+            <button class="word-chip" type="button" data-word="ritmo">ritmo</button>
+          </div>
+          <button class="reset-phrase" type="button" data-reset>limpar <span>↺</span></button>
+        </div>
+      </section>
+
+      <section class="caderno-collage section-shell reveal">
+        <div class="collage-small collage-small-one">
+          <span>cor</span>
+        </div>
+        <div class="collage-image layered-art" data-depth-group="collage">
+          <img class="art-layer art-layer-bg" src="assets/card-corpo-bg.png" data-light-src="assets/card-corpo-bg.png" data-dark-src="assets/card-corpo-bg-dark.png" alt="" aria-hidden="true" loading="lazy" />
+          <img class="art-layer art-layer-fg" src="assets/card-corpo-fg.png" alt="Figura em movimento criada com carvão, pintura e papéis" loading="lazy" />
+        </div>
+        <div class="collage-small collage-small-two">
+          <span>voz</span>
+        </div>
+        <p class="collage-caption">recortar / juntar / deslocar / inventar</p>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <span>ATLAS <em>//</em> 02</span>
+      <span>caderno de linguagem <b>•</b> 2026</span>
+      <a href="index.html#inicio">voltar ao atlas ↗</a>
+    </footer>
+
+    <script src="vendor/lenis.min.js"></script>
+    <script src="vendor/gsap.min.js"></script>
+    <script src="vendor/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <script src="caderno.js"></script>
+  </body>
+</html>

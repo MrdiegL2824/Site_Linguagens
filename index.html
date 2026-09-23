@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#efe7da" />
+    <meta
+      name="description"
+      content="Protótipo visual e interativo para um trabalho sobre linguagens."
+    />
+    <title>ATLAS 01 — Linguagem em movimento</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="vendor/lenis.css" />
+    <link rel="stylesheet" href="styles.css?v=cursor-theme-02" />
+  </head>
+  <body data-theme="light">
+    <canvas class="particle-field" id="particle-field" aria-hidden="true"></canvas>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+
+    <div class="page-loader" aria-hidden="true">
+      <span class="loader-mark">ATLAS<span>//</span>01</span>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Voltar ao início">
+        <span class="brand-dot"></span>
+        <span>ATLAS <em>//</em> 01</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a class="nav-link is-active" href="#inicio">início</a>
+        <a class="nav-link" href="#galeria">camadas</a>
+        <a class="nav-link" href="#experiencia">estúdio</a>
+        <a class="nav-link" href="caderno.html">caderno</a>
+      </nav>
+
+      <button class="theme-toggle magnetic" type="button" data-theme-toggle aria-label="Ativar modo escuro">
+        <span class="theme-toggle-icon">◐</span>
+        <span data-theme-label>modo escuro</span>
+      </button>
+
+      <a class="header-action magnetic" href="#experiencia">
+        <span>entrar</span>
+        <span class="arrow">↗</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="hero section-shell" id="inicio">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line"></span> atlas de linguagem</p>
+          <h1>Toda forma<br /><span class="hero-cycle" data-hero-cycle aria-live="polite">é uma fala.</span></h1>
+          <p class="hero-description">
+            Palavra, imagem, corpo, cor. Um ensaio visual sobre as maneiras de dizer.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary magnetic" href="#galeria">
+              abrir o atlas
+              <span>↓</span>
+            </a>
+            <a class="text-link magnetic" href="#experiencia">ver as camadas <span>↗</span></a>
+          </div>
+        </div>
+
+        <div class="hero-art reveal" style="--delay: 140ms">
+          <div class="hero-orbit orbit-one"></div>
+          <div class="hero-orbit orbit-two"></div>
+          <div class="hero-image-wrap layered-art" data-parallax="0.14" data-depth-group="hero">
+            <img class="art-layer art-layer-bg" src="assets/hero-gesto-bg.png" data-light-src="assets/hero-gesto-bg.png" data-dark-src="assets/hero-gesto-bg-dark.png" alt="" aria-hidden="true" />
+            <img class="art-layer art-layer-fg" src="assets/hero-gesto-fg.png" alt="Colagem artística com gesto, tinta e papéis sobrepostos" />
+          </div>
+          <div class="hero-float-tag tag-top">palavra / imagem / gesto</div>
+          <div class="hero-float-tag tag-bottom">mova para perceber <span>↓</span></div>
+          <div class="hero-index">01<span>/</span>03</div>
+          <div class="hero-signal" aria-hidden="true">
+            <span>signal / 01</span>
+            <i></i>
+            <span>observe</span>
+          </div>
+        </div>
+
+        <div class="hero-scroll-note">
+          <span class="scroll-line"></span>
+          <span>deslize para descobrir</span>
+        </div>
+      </section>
+
+      <section class="gallery section-shell" id="galeria">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span class="eyebrow-line"></span> camadas de expressão</p>
+          <h2>Dizer também<br /><span>é criar.</span></h2>
+          <p class="section-note">As informações entram depois. Primeiro, a sensação.</p>
+        </div>
+
+        <div class="dimension-grid">
+          <button class="dimension-card reveal is-selected" style="--card-bg-image: url('assets/card-palavra-bg.png'); --card-bg-dark-image: url('assets/card-palavra-bg-dark.png'); --card-fg-image: url('assets/card-palavra-fg.png')" data-mode="structure" data-tilt>
+            <span class="card-image-layer card-image-bg" aria-hidden="true"></span>
+            <span class="card-image-layer card-image-fg" aria-hidden="true"></span>
+            <span class="card-number">01</span>
+            <span class="card-content">
+              <span class="card-label">palavra</span>
+              <strong>nomear</strong>
+            </span>
+            <span class="card-arrow">↗</span>
+          </button>
+
+          <button class="dimension-card reveal" style="--card-bg-image: url('assets/hero-gesto-bg.png'); --card-bg-dark-image: url('assets/hero-gesto-bg-dark.png'); --card-fg-image: url('assets/hero-gesto-fg.png')" data-mode="visual" data-tilt>
+            <span class="card-image-layer card-image-bg" aria-hidden="true"></span>
+            <span class="card-image-layer card-image-fg" aria-hidden="true"></span>
+            <span class="card-number">02</span>
+            <span class="card-content">
+              <span class="card-label">imagem</span>
+              <strong>sugerir</strong>
+            </span>
+            <span class="card-arrow">↗</span>
+          </button>
+
+          <button class="dimension-card reveal" style="--card-bg-image: url('assets/card-corpo-bg.png'); --card-bg-dark-image: url('assets/card-corpo-bg-dark.png'); --card-fg-image: url('assets/card-corpo-fg.png')" data-mode="motion" data-tilt>
+            <span class="card-image-layer card-image-bg" aria-hidden="true"></span>
+            <span class="card-image-layer card-image-fg" aria-hidden="true"></span>
+            <span class="card-number">03</span>
+            <span class="card-content">
+              <span class="card-label">corpo</span>
+              <strong>mover</strong>
+            </span>
+            <span class="card-arrow">↗</span>
+          </button>
+        </div>
+
+        <div class="word-marquee reveal" aria-label="Palavras que formam o atlas">
+          <div class="word-marquee-track">
+            <span>palavra</span><i>✦</i><span>imagem</span><i>↗</i><span>corpo</span><i>◌</i><span>ritmo</span><i>✦</i><span>silêncio</span><i>↗</i>
+            <span>palavra</span><i>✦</i><span>imagem</span><i>↗</i><span>corpo</span><i>◌</i><span>ritmo</span><i>✦</i><span>silêncio</span><i>↗</i>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience section-shell" id="experiencia">
+        <div class="experience-intro reveal">
+          <p class="eyebrow"><span class="eyebrow-line"></span> estúdio de linguagem</p>
+          <h2>Misture<br /><span>as camadas.</span></h2>
+          <p class="section-note">Cada escolha muda o gesto do palco.</p>
+        </div>
+
+        <div class="experience-panel reveal" style="--delay: 120ms">
+          <div class="panel-topline">
+            <span class="status"><i></i> processo aberto</span>
+            <span class="panel-code">ENSAIO_001</span>
+          </div>
+
+          <div class="playground-stage" data-stage>
+            <div class="stage-grid"></div>
+            <div class="stage-orbit stage-orbit-a"></div>
+            <div class="stage-orbit stage-orbit-b"></div>
+            <div class="stage-core">
+              <span class="core-symbol">✦</span>
+            </div>
+            <div class="stage-bar bar-a"></div>
+            <div class="stage-bar bar-b"></div>
+            <div class="stage-bar bar-c"></div>
+            <span class="stage-caption">uma forma de dizer</span>
+          </div>
+
+          <div class="panel-footer">
+            <div>
+              <span class="panel-label">camada atual</span>
+              <strong data-mode-label>palavra</strong>
+            </div>
+            <button class="button button-small magnetic" type="button" data-energize>
+              misturar <span>✦</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing section-shell reveal">
+        <div class="closing-image layered-art" data-depth-group="closing">
+          <img class="art-layer art-layer-bg" src="assets/card-corpo-bg.png" data-light-src="assets/card-corpo-bg.png" data-dark-src="assets/card-corpo-bg-dark.png" alt="" aria-hidden="true" loading="lazy" />
+          <img class="art-layer art-layer-fg" src="assets/card-corpo-fg.png" alt="Estudo artístico de corpo, gesto e movimento" loading="lazy" />
+          <div class="closing-overlay"></div>
+          <span class="closing-stamp">ATLAS / 01</span>
+        </div>
+        <div class="closing-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> última camada</p>
+          <h2>O conteúdo real<br /><span>entra depois.</span></h2>
+          <p>Aqui nasce a forma. Depois entram autores, obras, imagens e referências.</p>
+          <a class="text-link magnetic" href="#inicio">voltar ao começo <span>↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <span>ATLAS <em>//</em> 01</span>
+      <span>ensaio visual <b>•</b> 2026</span>
+      <span>feito para explorar</span>
+    </footer>
+
+    <script src="vendor/lenis.min.js"></script>
+    <script src="vendor/gsap.min.js"></script>
+    <script src="vendor/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
