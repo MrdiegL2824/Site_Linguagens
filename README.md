@@ -1,44 +1,22 @@
-# ATLAS — Linguagem em movimento
+# Memórias Póstumas — Hub Literário
 
-Site estático artístico para um trabalho escolar de Linguagens. A proposta é explorar como palavra, imagem, corpo, cor, ritmo e gesto também podem funcionar como formas de comunicação.
+Site interativo para o trabalho Literatura EnCena 2026 do 3º DS. O tema é *Memórias Póstumas de Brás Cubas*, de Machado de Assis.
 
-O projeto foi pensado para ter pouco texto, muitas imagens, movimento e interação. Ele funciona diretamente no GitHub Pages, sem backend e sem etapa de build.
+## Conteúdo
 
-## Páginas
+- `index.html`: apresentação, resumo, autor, Realismo e contexto histórico, narrativa, personagens, temas, atualidade e fontes.
+- `caderno.html`: quiz interativo com 10 questões, alternativas, gabarito, feedback e resultado final.
+- `styles.css`: identidade visual editorial, tema claro/escuro e layout responsivo.
+- `script.js`: navegação móvel, tema e animações de entrada.
+- `caderno.js`: perguntas, correção, feedback e pontuação do quiz.
+- `assets/`: colagens visuais usadas como imagens de memória e leitura.
 
-- `index.html` — página principal do Atlas, com hero, camadas de expressão, cards interativos e estúdio visual.
-- `caderno.html` — segunda página, com notas visuais, laboratório de frases e novas colagens.
+## Abrir localmente
 
-## Rodar localmente
+Execute `python -m http.server 4173` nesta pasta e acesse `http://127.0.0.1:4173/`.
 
-Dentro desta pasta, execute:
+O site é estático e pode ser publicado no GitHub Pages. As fontes e a edição digital da obra estão listadas na seção “Fontes e caminhos de leitura”.
 
-```powershell
-python -m http.server 4173
-```
+## Integrantes
 
-Depois abra `http://127.0.0.1:4173/`.
-
-Também é possível abrir os HTML diretamente, mas o servidor local é recomendado para testar todos os assets corretamente.
-
-## Publicar no GitHub Pages
-
-O repositório é:
-
-`https://github.com/MrdiegL2824/Site_Linguagens`
-
-No GitHub, abra `Settings > Pages`, selecione `Deploy from a branch`, escolha a branch `main` e a pasta `/ (root)`. O endereço esperado será:
-
-`https://mrdiegl2824.github.io/Site_Linguagens/`
-
-## Tecnologias
-
-- HTML semântico
-- CSS puro com layout responsivo, temas e animações
-- JavaScript puro para interações
-- GSAP + ScrollTrigger para animações de rolagem
-- Lenis para rolagem suave
-- Canvas para partículas e símbolos
-- PNGs e SVGs locais para manter o projeto compatível com GitHub Pages
-
-Para entender as decisões do projeto e continuar o desenvolvimento, leia [MEMORIA_PROJETO.md](MEMORIA_PROJETO.md).
+Felipe K., Luiz Diego e Vitor C. (G1, conforme o enunciado da atividade).

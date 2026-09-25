@@ -1,211 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#efe7da" />
-    <meta
-      name="description"
-      content="Protótipo visual e interativo para um trabalho sobre linguagens."
-    />
-    <title>ATLAS 01 — Linguagem em movimento</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="vendor/lenis.css" />
-    <link rel="stylesheet" href="styles.css?v=cursor-theme-04" />
-  </head>
-  <body data-theme="light">
-    <canvas class="particle-field" id="particle-field" aria-hidden="true"></canvas>
-    <div class="scroll-progress" aria-hidden="true"><span></span></div>
-    <div class="cursor-glow" aria-hidden="true"></div>
-    <div class="cursor-dot" aria-hidden="true"></div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eee5d5">
+  <meta name="description" content="Hub literário interativo sobre Memórias Póstumas de Brás Cubas, de Machado de Assis.">
+  <title>Memórias Póstumas — um hub literário</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=bras-cubas-01">
+</head>
+<body data-theme="light">
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Memórias Póstumas, início"><span class="brand-mark">MP</span><span>MEMÓRIAS <i>//</i> 1881</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu <span>☰</span></button>
+    <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+      <a href="#obra">a obra</a><a href="#autor">o autor</a><a href="#realismo">contexto</a><a href="#narrativa">narrativa</a><a href="#leitura">leituras</a><a href="caderno.html">quiz ↗</a>
+    </nav>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Ativar modo escuro"><span aria-hidden="true">◐</span><span data-theme-label>modo escuro</span></button>
+  </header>
 
-    <div class="page-loader" aria-hidden="true">
-      <span class="loader-mark">ATLAS<span>//</span>01</span>
-    </div>
+  <main>
+    <section class="hero section-shell" id="inicio">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> romance · Machado de Assis · 1881</p>
+        <h1>Memórias<br><em>Póstumas</em><br><span>de Brás Cubas</span></h1>
+        <p class="hero-lede">Um narrador que já morreu volta para contar a própria vida — com humor, vaidade e uma memória que nunca é tão inocente quanto parece.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#obra">Entrar na obra <span>↓</span></a><a class="text-link" href="caderno.html">Testar minha leitura <span>↗</span></a></div>
+        <div class="team-line"><span>HUB LITERÁRIO · 3º DS</span><strong>Felipe K. · Luiz Diego · Vitor C.</strong></div>
+      </div>
+      <figure class="hero-art reveal" style="--delay:120ms">
+        <div class="art-frame"><img src="assets/hero-gesto-bg.png" alt="" aria-hidden="true"><img class="art-foreground" src="assets/hero-gesto-fg.png" alt="Colagem de gesto, papel e tinta que evoca lembranças fragmentadas"></div>
+        <figcaption><span>RIO DE JANEIRO</span><span>LEMBRAR TAMBÉM É NARRAR</span></figcaption>
+        <span class="art-index">01 <i>/</i> 08</span>
+      </figure>
+      <a class="scroll-cue" href="#obra"><span></span> percorra as memórias</a>
+    </section>
 
-    <header class="site-header">
-      <a class="brand" href="#inicio" aria-label="Voltar ao início">
-        <span class="brand-dot"></span>
-        <span>ATLAS <em>//</em> 01</span>
-      </a>
+    <section class="section-shell intro-band" id="obra">
+      <div class="section-heading reveal"><p class="eyebrow"><span></span> 01 / a obra</p><h2>Uma vida contada<br><em>do outro lado.</em></h2></div>
+      <div class="intro-copy reveal" style="--delay:100ms">
+        <p><strong>Brás Cubas narra depois de morto.</strong> Em vez de começar pelo nascimento, abre o relato com a própria morte e percorre lembranças da infância à vida adulta. O resultado não é uma autobiografia neutra: o narrador escolhe o que contar, interrompe o fio da história e conversa diretamente com quem lê.</p>
+        <p>Entre amores, projetos políticos e ambições que não se realizam, o livro transforma a memória de um homem da elite carioca em uma observação irônica sobre sua época — e sobre a maneira como cada pessoa tenta justificar a própria vida.</p>
+      </div>
+      <div class="timeline reveal">
+        <div><span>01</span><strong>O começo pelo fim</strong><p>Brás apresenta sua morte e assume a voz de “defunto autor”.</p></div>
+        <div><span>02</span><strong>Recordações em fragmentos</strong><p>Infância, amores, amizades e planos surgem em capítulos curtos e digressivos.</p></div>
+        <div><span>03</span><strong>O saldo da vida</strong><p>Ao final, o narrador faz um balanço tão irônico quanto pessimista.</p></div>
+      </div>
+    </section>
 
-      <nav class="main-nav" aria-label="Navegação principal">
-        <a class="nav-link is-active" href="#inicio">início</a>
-        <a class="nav-link" href="#galeria">camadas</a>
-        <a class="nav-link" href="#experiencia">estúdio</a>
-        <a class="nav-link" href="caderno.html">caderno</a>
-      </nav>
+    <section class="section-shell author-section" id="autor">
+      <div class="author-art reveal"><img src="assets/card-palavra.png" alt="Colagem com pássaro, olho e formas recortadas, evocando a imaginação e a escrita"><span class="image-caption">UM AUTOR QUE FAZ DA FORMA UMA IDEIA</span></div>
+      <div class="author-copy reveal" style="--delay:100ms"><p class="eyebrow"><span></span> 02 / quem escreveu</p><h2>Machado de<br><em>Assis.</em></h2>
+        <p>Joaquim Maria Machado de Assis nasceu no Rio de Janeiro em 1839 e morreu em 1908. Foi jornalista, cronista, contista, romancista, poeta e dramaturgo. Criado no Morro do Livramento, teve trajetória ligada à imprensa e ao serviço público e participou da fundação da Academia Brasileira de Letras, da qual foi o primeiro presidente.</p>
+        <p>Começou a carreira literária próximo do Romantismo. A partir de <em>Memórias Póstumas</em>, sua ficção madura passa a explorar com especial força a ironia, a ambiguidade, a análise psicológica e os limites da voz que conta. Ao transformar o narrador e o leitor em parte do jogo, Machado ampliou as possibilidades do romance brasileiro.</p>
+        <div class="works-list"><span>OUTRAS OBRAS</span><p><i>Quincas Borba</i> · <i>Dom Casmurro</i> · <i>Esaú e Jacó</i> · <i>Memorial de Aires</i></p></div>
+      </div>
+    </section>
 
-      <button class="theme-toggle magnetic" type="button" data-theme-toggle aria-label="Ativar modo escuro">
-        <span class="theme-toggle-icon">◐</span>
-        <span data-theme-label>modo escuro</span>
-      </button>
+    <section class="section-shell context-section" id="realismo">
+      <div class="section-heading reveal"><p class="eyebrow"><span></span> 03 / escola e tempo</p><h2>Realismo, com<br><em>um narrador impossível.</em></h2><p class="section-note">O livro costuma ser estudado como marco do Realismo no Brasil. Sua forma, porém, brinca com as próprias regras da narração.</p></div>
+      <div class="context-grid">
+        <article class="context-card reveal"><span class="card-index">A</span><h3>Olhar crítico</h3><p>A obra troca a idealização romântica por ironia, observação psicológica e atenção às relações de interesse, prestígio e poder.</p></article>
+        <article class="context-card reveal" style="--delay:80ms"><span class="card-index">B</span><h3>Forma que se revela</h3><p>Brás comenta o livro enquanto o escreve, interpela o leitor e rompe a sequência. A narrativa lembra que toda memória é uma versão construída.</p></article>
+        <article class="context-card reveal" style="--delay:160ms"><span class="card-index">C</span><h3>Brasil Império</h3><p>A edição em livro saiu em 1881. A escravidão ainda era legal no país; a Lei Áurea só foi assinada em 1888. Esse contexto atravessa as relações de classe e a violência mostradas no romance.</p></article>
+      </div>
+      <div class="date-strip reveal"><span>1880</span><p>Publicação em folhetins na <i>Revista Brasileira</i>.</p><span>1881</span><p>Primeira edição em livro pela Typographia Nacional.</p><span>1888</span><p>Lei Áurea declara extinta a escravidão no Brasil.</p></div>
+    </section>
 
-      <a class="header-action magnetic" href="#experiencia">
-        <span>entrar</span>
-        <span class="arrow">↗</span>
-      </a>
-    </header>
+    <section class="section-shell narrative-section" id="narrativa">
+      <div class="section-heading reveal"><p class="eyebrow"><span></span> 04 / personagens e construção</p><h2>Quem fala?<br><em>Quem fica de fora?</em></h2></div>
+      <div class="narrative-grid">
+        <article class="narrative-note reveal"><span class="note-label">NARRADOR</span><h3>Brás Cubas</h3><p>Conta a própria história em primeira pessoa depois da morte. É espirituoso e persuasivo, mas também vaidoso e interessado em controlar a impressão que deixa.</p></article>
+        <article class="narrative-note reveal"><span class="note-label">TEMPO E ESPAÇO</span><h3>Memória em movimento</h3><p>O relato atravessa diferentes momentos da vida de Brás. O Rio de Janeiro é o espaço principal; Coimbra aparece em sua formação. As lembranças avançam, recuam e se desviam.</p></article>
+        <article class="narrative-note reveal"><span class="note-label">CONFLITO</span><h3>Desejo e privilégio</h3><p>Brás busca amor, prestígio e importância, mas raramente sustenta seus projetos. Sua voz tenta transformar a falta de realizações em uma história favorável a si mesmo.</p></article>
+      </div>
+      <div class="character-list reveal"><div><span class="note-label">NO LIVRO</span><p><strong>Virgília</strong> — amor de Brás e esposa de Lobo Neves.</p><p><strong>Quincas Borba</strong> — amigo que apresenta o Humanitismo.</p><p><strong>Marcela</strong> — paixão da juventude de Brás.</p></div><div><p><strong>Eugênia</strong> — jovem que Brás conhece na casa de Dona Eusébia.</p><p><strong>Prudêncio</strong> — homem escravizado na infância de Brás, cuja trajetória expõe a violência da escravidão.</p><p><strong>Dona Plácida</strong> — intermediária no caso entre Brás e Virgília.</p></div></div>
+    </section>
 
-    <main>
-      <section class="hero section-shell" id="inicio">
-        <div class="hero-copy reveal">
-          <p class="eyebrow"><span class="eyebrow-line"></span> atlas de linguagem</p>
-          <h1>Toda forma<br /><span class="hero-cycle" data-hero-cycle aria-live="polite">é uma fala.</span></h1>
-          <p class="hero-description">
-            Palavra, imagem, corpo, cor. Um ensaio visual sobre as maneiras de dizer.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary magnetic" href="#galeria">
-              abrir o atlas
-              <span>↓</span>
-            </a>
-            <a class="text-link magnetic" href="#experiencia">ver as camadas <span>↗</span></a>
-          </div>
-        </div>
+    <section class="section-shell reading-section" id="leitura">
+      <div class="section-heading reveal"><p class="eyebrow"><span></span> 05 / temas e criticidade</p><h2>O humor abre<br><em>uma ferida.</em></h2><p class="section-note">A ironia diverte, mas também nos obriga a desconfiar de quem está contando.</p></div>
+      <div class="theme-grid">
+        <article class="theme-card theme-dark reveal"><span>01 — PRIVILÉGIO</span><h3>Uma vida sem urgência</h3><p>A posição social de Brás lhe permite perseguir desejos e abandonar projetos sem enfrentar as mesmas consequências que recaem sobre os demais.</p></article>
+        <article class="theme-card theme-paper reveal" style="--delay:90ms"><span>02 — ESCRAVIDÃO</span><h3>A violência que o narrador normaliza</h3><p>Na cena de Prudêncio, a memória de uma brincadeira cruel na infância reaparece adulta como violência contra outra pessoa escravizada. A distância entre a leveza do relato e a brutalidade da cena é parte da crítica.</p></article>
+        <article class="theme-card theme-wine reveal" style="--delay:180ms"><span>03 — MEMÓRIA</span><h3>Quem escolhe a versão?</h3><p>Brás controla o ritmo, muda de assunto e provoca o leitor. Sua autobiografia é também uma tentativa de administrar a própria imagem.</p></article>
+        <article class="theme-card theme-blue reveal" style="--delay:270ms"><span>04 — GÊNERO E STATUS</span><h3>Afeto atravessado por convenções</h3><p>As escolhas amorosas de Virgília e Brás acontecem dentro de uma sociedade em que casamento, reputação e posição social pesam sobre as relações.</p></article>
+      </div>
+    </section>
 
-        <div class="hero-art reveal" style="--delay: 140ms">
-          <div class="hero-orbit orbit-one"></div>
-          <div class="hero-orbit orbit-two"></div>
-          <div class="hero-image-wrap layered-art" data-parallax="0.14" data-depth-group="hero">
-            <img class="art-layer art-layer-bg" src="assets/hero-gesto-bg.png" data-light-src="assets/hero-gesto-bg.png" data-dark-src="assets/hero-gesto-bg-dark.png" alt="" aria-hidden="true" />
-            <img class="art-layer art-layer-fg" src="assets/hero-gesto-fg.png" alt="Colagem artística com gesto, tinta e papéis sobrepostos" />
-          </div>
-          <div class="hero-float-tag tag-top">palavra / imagem / gesto</div>
-          <div class="hero-float-tag tag-bottom">mova para perceber <span>↓</span></div>
-          <div class="hero-index">01<span>/</span>03</div>
-          <div class="hero-signal" aria-hidden="true">
-            <span>signal / 01</span>
-            <i></i>
-            <span>observe</span>
-          </div>
-        </div>
+    <section class="section-shell today-section" id="atualidade">
+      <div class="today-mark reveal">?</div>
+      <div class="today-copy reveal" style="--delay:100ms"><p class="eyebrow"><span></span> 06 / a obra hoje</p><h2>Mais de um século depois,<br><em>a pergunta continua.</em></h2><p>Quem tem o poder de contar a própria história — e quem aparece apenas como personagem na história dos outros? A leitura de Brás pode aproximar o romance de debates atuais sobre privilégio, desigualdade, memória histórica e a autopromoção de quem ocupa posições de poder.</p><p class="discussion-prompt">PARA CONVERSAR: quando Brás explica suas escolhas, você acredita nele ou percebe as contradições que ele tenta esconder?</p></div>
+    </section>
 
-        <div class="hero-scroll-note">
-          <span class="scroll-line"></span>
-          <span>deslize para descobrir</span>
-        </div>
-      </section>
+    <section class="section-shell quiz-invite reveal"><div><p class="eyebrow"><span></span> 07 / confira sua leitura</p><h2>Você leu<br><em>nas entrelinhas?</em></h2></div><a class="button button-primary" href="caderno.html">Fazer o quiz <span>↗</span></a></section>
 
-      <section class="gallery section-shell" id="galeria">
-        <div class="section-heading reveal">
-          <p class="eyebrow"><span class="eyebrow-line"></span> camadas de expressão</p>
-          <h2>Dizer também<br /><span>é criar.</span></h2>
-          <p class="section-note">As informações entram depois. Primeiro, a sensação.</p>
-        </div>
+    <section class="section-shell references" id="referencias"><p class="eyebrow"><span></span> fontes e caminhos de leitura</p><div class="reference-grid">
+      <a href="https://digital.bbm.usp.br/handle/bbm/4826?locale=pt_BR" target="_blank" rel="noopener"><span>FONTE PRIMÁRIA · USP</span><strong>Primeira edição em livro, 1881</strong><i>Biblioteca Brasiliana Guita e José Mindlin ↗</i></a>
+      <a href="https://www.academia.org.br/academicos/machado-de-assis/biografia" target="_blank" rel="noopener"><span>BIOGRAFIA · ABL</span><strong>Vida e trajetória de Machado de Assis</strong><i>Academia Brasileira de Letras ↗</i></a>
+      <a href="https://sou.ucs.br/etc/revistas/index.php/antares/article/view/6391" target="_blank" rel="noopener"><span>ARTIGO ACADÊMICO</span><strong>Intertextualidade, metaficção e Realismo</strong><i>Revista ANTARES · Universidade de Caxias do Sul ↗</i></a>
+      <a href="https://www.planalto.gov.br/ccivil_03/leis/lim/lim3353.htm" target="_blank" rel="noopener"><span>DOCUMENTO HISTÓRICO</span><strong>Lei nº 3.353, de 13 de maio de 1888</strong><i>Presidência da República ↗</i></a>
+      <a href="https://dominiopublico.mec.gov.br/pesquisa/DetalheObraForm.do?co_obra=2038&select_action=" target="_blank" rel="noopener"><span>LEITURA INTEGRAL</span><strong>Memórias Póstumas de Brás Cubas</strong><i>Portal Domínio Público ↗</i></a>
+    </div></section>
+  </main>
 
-        <div class="dimension-grid">
-          <button class="dimension-card reveal is-selected" style="--card-bg-image: url('assets/card-palavra-bg.png'); --card-bg-dark-image: url('assets/card-palavra-bg-dark.png'); --card-fg-image: url('assets/card-palavra-fg.png')" data-mode="structure" data-tilt>
-            <span class="card-image-layer card-image-bg" aria-hidden="true"></span>
-            <span class="card-image-layer card-image-fg" aria-hidden="true"></span>
-            <span class="card-number">01</span>
-            <span class="card-content">
-              <span class="card-label">palavra</span>
-              <strong>nomear</strong>
-            </span>
-            <span class="card-arrow">↗</span>
-          </button>
-
-          <button class="dimension-card reveal" style="--card-bg-image: url('assets/hero-gesto-bg.png'); --card-bg-dark-image: url('assets/hero-gesto-bg-dark.png'); --card-fg-image: url('assets/hero-gesto-fg.png')" data-mode="visual" data-tilt>
-            <span class="card-image-layer card-image-bg" aria-hidden="true"></span>
-            <span class="card-image-layer card-image-fg" aria-hidden="true"></span>
-            <span class="card-number">02</span>
-            <span class="card-content">
-              <span class="card-label">imagem</span>
-              <strong>sugerir</strong>
-            </span>
-            <span class="card-arrow">↗</span>
-          </button>
-
-          <button class="dimension-card reveal" style="--card-bg-image: url('assets/card-corpo-bg.png'); --card-bg-dark-image: url('assets/card-corpo-bg-dark.png'); --card-fg-image: url('assets/card-corpo-fg.png')" data-mode="motion" data-tilt>
-            <span class="card-image-layer card-image-bg" aria-hidden="true"></span>
-            <span class="card-image-layer card-image-fg" aria-hidden="true"></span>
-            <span class="card-number">03</span>
-            <span class="card-content">
-              <span class="card-label">corpo</span>
-              <strong>mover</strong>
-            </span>
-            <span class="card-arrow">↗</span>
-          </button>
-        </div>
-
-        <div class="word-marquee reveal" aria-label="Palavras que formam o atlas">
-          <div class="word-marquee-track">
-            <span>palavra</span><i>✦</i><span>imagem</span><i>↗</i><span>corpo</span><i>◌</i><span>ritmo</span><i>✦</i><span>silêncio</span><i>↗</i>
-            <span>palavra</span><i>✦</i><span>imagem</span><i>↗</i><span>corpo</span><i>◌</i><span>ritmo</span><i>✦</i><span>silêncio</span><i>↗</i>
-          </div>
-        </div>
-      </section>
-
-      <section class="experience section-shell" id="experiencia">
-        <div class="experience-intro reveal">
-          <p class="eyebrow"><span class="eyebrow-line"></span> estúdio de linguagem</p>
-          <h2>Misture<br /><span>as camadas.</span></h2>
-          <p class="section-note">Cada escolha muda o gesto do palco.</p>
-        </div>
-
-        <div class="experience-panel reveal" style="--delay: 120ms">
-          <div class="panel-topline">
-            <span class="status"><i></i> processo aberto</span>
-            <span class="panel-code">ENSAIO_001</span>
-          </div>
-
-          <div class="playground-stage" data-stage>
-            <div class="stage-grid"></div>
-            <div class="stage-orbit stage-orbit-a"></div>
-            <div class="stage-orbit stage-orbit-b"></div>
-            <div class="stage-core">
-              <span class="core-symbol">✦</span>
-            </div>
-            <div class="stage-bar bar-a"></div>
-            <div class="stage-bar bar-b"></div>
-            <div class="stage-bar bar-c"></div>
-            <span class="stage-caption">uma forma de dizer</span>
-          </div>
-
-          <div class="panel-footer">
-            <div>
-              <span class="panel-label">camada atual</span>
-              <strong data-mode-label>palavra</strong>
-            </div>
-            <button class="button button-small magnetic" type="button" data-energize>
-              misturar <span>✦</span>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section class="closing section-shell reveal">
-        <div class="closing-image layered-art" data-depth-group="closing">
-          <img class="art-layer art-layer-bg" src="assets/card-corpo-bg.png" data-light-src="assets/card-corpo-bg.png" data-dark-src="assets/card-corpo-bg-dark.png" alt="" aria-hidden="true" loading="lazy" />
-          <img class="art-layer art-layer-fg" src="assets/card-corpo-fg.png" alt="Estudo artístico de corpo, gesto e movimento" loading="lazy" />
-          <div class="closing-overlay"></div>
-          <span class="closing-stamp">ATLAS / 01</span>
-        </div>
-        <div class="closing-copy">
-          <p class="eyebrow"><span class="eyebrow-line"></span> última camada</p>
-          <h2>O conteúdo real<br /><span>entra depois.</span></h2>
-          <p>Aqui nasce a forma. Depois entram autores, obras, imagens e referências.</p>
-          <a class="text-link magnetic" href="#inicio">voltar ao começo <span>↗</span></a>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer section-shell">
-      <span>ATLAS <em>//</em> 01</span>
-      <span>ensaio visual <b>•</b> 2026</span>
-      <span>feito para explorar</span>
-    </footer>
-
-    <script src="vendor/lenis.min.js"></script>
-    <script src="vendor/gsap.min.js"></script>
-    <script src="vendor/ScrollTrigger.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+  <footer class="site-footer"><a class="brand" href="#inicio"><span class="brand-mark">MP</span><span>MEMÓRIAS <i>//</i> 1881</span></a><span>3º DS · Literatura EnCena 2026</span><span>Felipe K. · Luiz Diego · Vitor C.</span></footer>
+  <script src="script.js"></script>
+</body>
 </html>
