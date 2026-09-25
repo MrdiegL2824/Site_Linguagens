@@ -9,13 +9,15 @@ Site interativo para o trabalho Literatura EnCena 2026 do 3º DS. O tema é *Mem
 - `styles.css`: identidade visual editorial, tema claro/escuro e layout responsivo.
 - `script.js`: navegação móvel, tema e animações de entrada.
 - `caderno.js`: perguntas, correção, feedback e pontuação do quiz.
-- `assets/`: colagens visuais usadas como imagens de memória e leitura.
+- `assets/`: colagens em camadas WebP para a abertura e a seção de Machado de Assis. As camadas de fundo e primeiro plano se movem com o cursor; a preferência por movimento reduzido desativa esse efeito.
 
 ## Abrir localmente
 
 Execute `python -m http.server 4173` nesta pasta e acesse `http://127.0.0.1:4173/`.
 
 O site é estático e pode ser publicado no GitHub Pages. As fontes e a edição digital da obra estão listadas na seção “Fontes e caminhos de leitura”.
+
+O retrato histórico de Machado foi fotografado por Marc Ferrez por volta de 1890. A página da imagem no Wikimedia Commons identifica a fotografia como domínio público.
 
 ## Integrantes
 

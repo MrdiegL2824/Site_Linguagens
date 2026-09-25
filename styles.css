@@ -80,8 +80,10 @@ h1 em, h2 em { color: var(--red); font-weight: 500; }
 .team-line strong { font: 500 12px "DM Sans", sans-serif; }
 .hero-art { position: relative; min-width: 0; margin: 0; padding: 12px 0 26px 18px; }
 .art-frame { position: relative; aspect-ratio: .96; overflow: hidden; background: #d9c9ad; box-shadow: var(--shadow); transform: rotate(1.2deg); }
-.art-frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.art-frame .art-foreground { mix-blend-mode: normal; }
+.art-frame img, .author-frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
+.layered-art { --bg-x: 0px; --bg-y: 0px; --fg-x: 0px; --fg-y: 0px; }
+.layered-art .art-background { transform: translate3d(var(--bg-x), var(--bg-y), 0) scale(1.07); transition: transform .32s cubic-bezier(.2,.7,.2,1); }
+.layered-art .art-foreground { object-fit: contain; mix-blend-mode: normal; transform: translate3d(var(--fg-x), var(--fg-y), 0) scale(1.015); transition: transform .32s cubic-bezier(.2,.7,.2,1); }
 .hero-art figcaption { display: flex; justify-content: space-between; gap: 12px; margin-top: 17px; }
 .art-index { position: absolute; top: 0; right: 0; padding: 9px 12px; background: var(--red); color: white; font: 500 11px "DM Mono", monospace; }
 .art-index i { opacity: .65; font-style: normal; }
@@ -97,9 +99,10 @@ h1 em, h2 em { color: var(--red); font-weight: 500; }
 .timeline strong { display: block; margin-bottom: 7px; font: 600 14px "DM Sans", sans-serif; }
 .timeline p { margin: 0; color: var(--muted); font-size: 13px; }
 .author-section { display: grid; grid-template-columns: .92fr 1.08fr; align-items: center; gap: 9%; padding-block: 80px; }
-.author-art { position: relative; margin: 0; }
-.author-art img { display: block; width: 100%; max-height: 530px; object-fit: cover; box-shadow: var(--shadow); }
+.author-art { position: relative; width: 100%; max-width: 490px; margin: 0; }
+.author-frame { position: relative; width: 100%; aspect-ratio: 4 / 5; overflow: hidden; background: #e4d3b5; box-shadow: var(--shadow); }
 .image-caption { position: absolute; right: -12px; bottom: 22px; padding: 10px 13px; background: var(--paper-light); color: var(--red); }
+.image-caption a { color: inherit; text-underline-offset: 3px; }
 .author-copy p { max-width: 620px; color: var(--muted); font-size: 14px; }
 .works-list { margin-top: 28px; padding: 16px 0 0; border-top: 1px solid var(--line); }
 .works-list p { margin: 8px 0 0; color: var(--ink); font-family: "Playfair Display", serif; font-size: 19px; }
