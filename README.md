@@ -9,7 +9,7 @@ Site interativo para o trabalho Literatura EnCena 2026 do 3º DS. O tema é *Mem
 - `styles.css`: identidade visual editorial, tema claro/escuro e layout responsivo.
 - `script.js`: navegação móvel, tema e animações de entrada.
 - `caderno.js`: perguntas, correção, feedback e pontuação do quiz.
-- `assets/`: fundo de colagem literária, livro tridimensional de *Memórias Póstumas* e retrato de Machado de Assis em camadas WebP. O fundo permanece imóvel enquanto o livro e o retrato respondem ao movimento do cursor; a preferência por movimento reduzido desativa a interação.
+- `assets/`: fundo de papel rasgado em tons de azul e sépia, livro tridimensional de *Memórias Póstumas* e retrato de Machado de Assis em camadas. O fundo permanece imóvel enquanto o livro e o retrato respondem ao movimento do cursor; a preferência por movimento reduzido desativa a interação.
 
 ## Abrir localmente
 

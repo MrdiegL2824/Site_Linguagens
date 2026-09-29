@@ -84,6 +84,8 @@ h1 em, h2 em { color: var(--red); font-weight: 500; }
 .layered-art { --fg-x: 0px; --fg-y: 0px; --fg-rotate-x: 0deg; --fg-rotate-y: 0deg; perspective: 900px; }
 .layered-art .art-background { transform: scale(1.07); }
 .layered-art .art-foreground { object-fit: contain; mix-blend-mode: normal; transform: translate3d(var(--fg-x), var(--fg-y), 0) rotateX(var(--fg-rotate-x)) rotateY(var(--fg-rotate-y)) scale(1.025); transform-origin: center; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform; transition: transform .32s cubic-bezier(.2,.7,.2,1); }
+.hero-art .art-frame { overflow: visible; background: transparent; box-shadow: none; }
+.hero-art .art-background { object-fit: contain; transform: none; filter: drop-shadow(0 18px 28px #45321b26); }
 .intro-band { display: grid; grid-template-columns: .85fr 1.15fr; column-gap: 8%; padding-block: 100px 110px; border-top: 1px solid var(--line); }
 .section-heading h2, .author-copy h2, .today-copy h2, .quiz-invite h2 { margin-bottom: 20px; font-size: clamp(40px, 5.5vw, 66px); line-height: 1.03; }
 .intro-copy { max-width: 650px; padding-top: 32px; color: var(--muted); font-size: 15px; }
