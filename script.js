@@ -57,27 +57,27 @@ if (!reduceMotion) {
       const bounds = artwork.getBoundingClientRect();
       const x = (event.clientX - bounds.left) / bounds.width - 0.5;
       const y = (event.clientY - bounds.top) / bounds.height - 0.5;
-      artwork.style.setProperty("--bg-x", `${-x * 9}px`);
-      artwork.style.setProperty("--bg-y", `${-y * 9}px`);
-      artwork.style.setProperty("--fg-x", `${x * 15}px`);
-      artwork.style.setProperty("--fg-y", `${y * 15}px`);
+      artwork.style.setProperty("--fg-x", `${x * 13}px`);
+      artwork.style.setProperty("--fg-y", `${y * 11}px`);
+      artwork.style.setProperty("--fg-rotate-x", `${-y * 4}deg`);
+      artwork.style.setProperty("--fg-rotate-y", `${x * 5}deg`);
     });
 
     artwork.addEventListener("pointerleave", () => {
-      artwork.style.setProperty("--bg-x", "0px");
-      artwork.style.setProperty("--bg-y", "0px");
       artwork.style.setProperty("--fg-x", "0px");
       artwork.style.setProperty("--fg-y", "0px");
+      artwork.style.setProperty("--fg-rotate-x", "0deg");
+      artwork.style.setProperty("--fg-rotate-y", "0deg");
     });
 
     artwork.addEventListener("pointerdown", (event) => {
       if (event.pointerType !== "touch") return;
       window.clearTimeout(touchReset);
-      artwork.style.setProperty("--bg-y", "-5px");
-      artwork.style.setProperty("--fg-y", "9px");
+      artwork.style.setProperty("--fg-y", "-7px");
+      artwork.style.setProperty("--fg-rotate-x", "2deg");
       touchReset = window.setTimeout(() => {
-        artwork.style.setProperty("--bg-y", "0px");
         artwork.style.setProperty("--fg-y", "0px");
+        artwork.style.setProperty("--fg-rotate-x", "0deg");
       }, 500);
     });
   });

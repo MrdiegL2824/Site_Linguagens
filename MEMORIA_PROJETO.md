@@ -11,7 +11,7 @@ O site apresenta *Memórias Póstumas de Brás Cubas*, de Machado de Assis, como
 - `styles.css`: sistema visual responsivo, paleta de papel, tinta, vinho e azul, além do tema escuro.
 - `script.js`: menu responsivo, alternância de tema e revelação de conteúdo.
 - `caderno.js`: banco de questões, feedback imediato e pontuação.
-- `assets/`: fundos e recortes transparentes em WebP para a abertura e o retrato de Machado. O movimento de paralaxe acompanha o cursor e respeita a preferência por movimento reduzido do sistema.
+- `assets/`: colagem de fundo da abertura, livro 3D com fundo transparente e camadas do retrato de Machado. Os fundos ficam fixos; somente os primeiros planos respondem ao cursor com deslocamento e inclinação. A interação respeita a preferência por movimento reduzido do sistema.
 
 O retrato é de Marc Ferrez (c. 1890), disponibilizado em domínio público no [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Machado_de_Assis_by_Marc_Ferrez_(cropped_3x4).jpg).
 
