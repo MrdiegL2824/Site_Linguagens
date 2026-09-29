@@ -25,4 +25,4 @@ O retrato é de Marc Ferrez (c. 1890), disponibilizado em domínio público no [
 
 ## Integrantes do G1
 
-Felipe K., Luiz Diego e Vitor C.
+Luiz Diego, Felipe Kilpp e Vitor Crispim.

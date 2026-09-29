@@ -21,4 +21,4 @@ O retrato histórico de Machado foi fotografado por Marc Ferrez por volta de 189
 
 ## Integrantes
 
-Felipe K., Luiz Diego e Vitor C. (G1, conforme o enunciado da atividade).
+Luiz Diego, Felipe Kilpp e Vitor Crispim (G1, conforme o enunciado da atividade).
