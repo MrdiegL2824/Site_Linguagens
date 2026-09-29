@@ -98,6 +98,8 @@ h1 em, h2 em { color: var(--red); font-weight: 500; }
 .author-section { display: grid; grid-template-columns: .92fr 1.08fr; align-items: center; gap: 9%; padding-block: 80px; }
 .author-art { position: relative; width: 100%; max-width: 490px; margin: 0; }
 .author-frame { position: relative; width: 100%; aspect-ratio: 4 / 5; overflow: hidden; background: #e4d3b5; box-shadow: var(--shadow); }
+.author-art .author-frame { overflow: visible; background: transparent; box-shadow: none; }
+.author-art .art-background { object-fit: contain; transform: none; filter: drop-shadow(0 18px 28px #45321b26); }
 .image-caption { position: absolute; right: -12px; bottom: 22px; padding: 10px 13px; background: var(--paper-light); color: var(--red); }
 .image-caption a { color: inherit; text-underline-offset: 3px; }
 .author-copy p { max-width: 620px; color: var(--muted); font-size: 14px; }
