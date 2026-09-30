@@ -159,12 +159,11 @@ function chooseAnswer(index, selectedButton) {
 function renderResult() {
   counter.textContent = "Fim do quiz";
   progress.style.width = "100%";
-  const percent = Math.round((score / sessionQuestions.length) * 100);
   const message = score === sessionQuestions.length
-    ? "Leitura atenta: você percebeu as estratégias do narrador e os conflitos da obra."
+    ? "Você reconheceu as estratégias do narrador e os conflitos da obra."
     : score >= 7
       ? "Boa leitura. Reveja as questões erradas e repare como a forma do romance participa da crítica."
-      : "Vale voltar a algumas seções do hub. Observe quem narra, o que ele omite e o contexto social das cenas.";
+      : "Releia algumas partes do romance e observe quem narra, o que omite e o contexto social das cenas.";
   app.innerHTML = `<div class="quiz-result"><p class="eyebrow"><span></span> resultado</p><h2>Sua<br><em>pontuação.</em></h2><strong class="result-score">${score}/${sessionQuestions.length}</strong><p></p><button class="quiz-next" id="restart-quiz" type="button">Refazer o quiz ↻</button></div>`;
   app.querySelector(".quiz-result p:not(.eyebrow)").textContent = message;
   app.querySelector("#restart-quiz").addEventListener("click", () => { current = 0; score = 0; prepareQuiz(); renderQuestion(); });
