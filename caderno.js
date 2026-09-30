@@ -165,7 +165,7 @@ function renderResult() {
     : score >= 7
       ? "Boa leitura. Reveja as questões erradas e repare como a forma do romance participa da crítica."
       : "Vale voltar a algumas seções do hub. Observe quem narra, o que ele omite e o contexto social das cenas.";
-  app.innerHTML = `<div class="quiz-result"><p class="eyebrow"><span></span> resultado</p><h2>Seu saldo<br><em>de leitura.</em></h2><strong class="result-score">${score}/${sessionQuestions.length}</strong><p></p><button class="quiz-next" id="restart-quiz" type="button">Refazer o quiz ↻</button></div>`;
+  app.innerHTML = `<div class="quiz-result"><p class="eyebrow"><span></span> resultado</p><h2>Sua<br><em>pontuação.</em></h2><strong class="result-score">${score}/${sessionQuestions.length}</strong><p></p><button class="quiz-next" id="restart-quiz" type="button">Refazer o quiz ↻</button></div>`;
   app.querySelector(".quiz-result p:not(.eyebrow)").textContent = message;
   app.querySelector("#restart-quiz").addEventListener("click", () => { current = 0; score = 0; prepareQuiz(); renderQuestion(); });
 }
